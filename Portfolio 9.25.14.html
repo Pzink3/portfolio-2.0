@@ -1,0 +1,239 @@
+<html class=" -webkit- js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/joshnh/pen/qhGfE">
+
+<script src="http://s.codepen.io/assets/libs/prefixfree.min.js"></script><script src="http://s.codepen.io/assets/libs/modernizr.js"></script>
+<style class="cp-pen-styles">body {
+    background-color: #f6f6f6;
+    background-image: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0) 50%,
+                      hsla(0,0%,0%,.015) 50%, hsla(0,0%,0%,.015) 100%),
+                      -webkit-radial-gradient(hsla(0,0%,0%,.05) 10%, transparent 15%),
+                      -webkit-linear-gradient(hsla(0,0%,0%,.2) 0%, hsla(0,0%,100%,0) 100%);
+    background-position: 50% 50%, 50% 50%, 50% 0%;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: 20px 20px, 10px 10px, 100% 25px;
+    left: -10px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    width: 960px;
+}
+
+/* Header */
+
+header {
+    background-color: #c4453c;
+    background-image: -webkit-radial-gradient(hsla(0,0%,0%,.025) 10%, transparent 15%),
+                      -webkit-linear-gradient(hsla(0,0%,0%,.2) 0%, hsla(0,0%,100%,0) 100%);
+    background-position: 50% 5px, 50% 0%;
+    background-repeat: repeat, no-repeat;
+    background-size: 10px 10px, 100% 25px;
+    height: 120px;
+    margin: 0 0 70px 20px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    position: relative;
+    width: 940px;
+}
+header:after {
+    background-image: -webkit-linear-gradient(45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c), 
+                      -webkit-linear-gradient(-45deg, #c4453c 25%, transparent 25%, transparent 75%, #c4453c 75%, #c4453c);
+    background-position: 50% 0;
+    background-repeat: repeat-x;
+    background-size: 10px 10px;
+    bottom: -5px;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute; /* Make sure the parent element has a position set */
+    right: 0;
+}
+h1 {
+    color: #333;
+    font: 75px/80px Abel, sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+}
+
+/* Gallery */
+
+.gallery figure {
+    float: left;
+    height: 200px;
+    margin: 0 0 20px 20px;
+    padding: 0;
+    position: relative;
+    -webkit-perspective: 1000;
+    -webkit-transition: all 1s ease;
+}
+.gallery a {
+    text-decoration: none;
+}
+.gallery img {
+    background: #111;
+    display: block;
+    height: 200px;
+    width: 460px;
+    -webkit-box-shadow: 0 5px 15px -5px hsla(0,0%,0%,.5);
+    -webkit-transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transition: all 1s ease;
+}
+.gallery figcaption {
+    background: #000;
+    color: #f6f6f6;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    width: 440px;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transition: all 1s ease;
+}
+.gallery h3 {
+    font: bold 1.25em/1 sans-serif;
+    margin-bottom: 1em;
+}
+.gallery figure:hover {
+    -webkit-transform: translate(0, -150px);
+}
+.gallery figure:hover img {
+    -webkit-box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+    -webkit-transform: rotateX(90deg);
+}
+.gallery figure:hover figcaption {
+    background: #111;
+    -webkit-box-shadow: 0 30px 15px -20px hsla(0,0%,0%,.5);
+    -webkit-transform: rotateX(0deg);
+}
+
+/* Small */
+
+.small-gallery figure {
+    height: 160px;
+    -webkit-perspective-origin: 50% 25%;
+}
+.small-gallery figure img {
+    height: 160px;
+    width: 220px;
+}
+.small-gallery figure figcaption {
+    height: 100px;
+    width: 200px;
+}
+.small-gallery figure:hover {
+    -webkit-transform: translate(0, -130px);
+}
+
+/* Footer */
+
+footer p {
+    color: #aaa;
+    font: 16px/100px georgia, serif;
+    text-align: center;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.75);
+}?</style></head><body>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<header>
+  <h1>Parker Zink</h1>
+
+</header>
+
+<section class="gallery">
+
+    <figure>
+        <a href="#">
+            <img src="https://lh4.googleusercontent.com/-2WTwKi4dcgo/VAyQI4aQOCI/AAAAAAAABZ8/Xaw5Tcpm5w4/w426-h283/%255B000007%255D.jpg" alt="">
+            <figcaption>
+                <h3>Dashing through the snow...</h3>
+                <p>This is me riding down the snow when I was a little kid.</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh4.googleusercontent.com/-xRLHch31fn0/VAyVaxOAqlI/AAAAAAAABdw/jedL4BVVWTY/w426-h283/Yosemite%2BAug%2B2009%2B44.JPG" alt="">
+            <figcaption>
+                <h3>The Z's in Yosemite!</h3>
+                <p>This is me and the famous canyon of Yosemite when I was young.</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh6.googleusercontent.com/-PQDkROGrX3I/VAyU0WcYdRI/AAAAAAAABdQ/kmWnm84QP4c/w1000-h750/Picture%2B035.jpg" alt="">
+            <figcaption>
+                <h3>Birds-eye view</h3>
+                <p>This is me sitting on a branch of a big tree when I was a little kid.</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh6.googleusercontent.com/-stCLkA6YGO0/VAyRlATBhDI/AAAAAAAABb0/HpDZknbQxhs/w426-h320/DSCF0871.JPG" alt="">
+            <figcaption>
+                <h3>Behind the wheels</h3>
+                <p>This is where I gave a thumbs up next to a Rose Bowl tournament van when I was little!</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+</section>
+
+<section class="small-gallery gallery">
+
+    <figure>
+        <a href="#">
+            <img src="https://lh6.googleusercontent.com/-fzW_xh_l_JE/VAyQvDwFV9I/AAAAAAAABag/M7ZGwE8D0NY/w426-h568/Kauai%2BAug%2B2008%2B198.JPG" alt="">
+            <figcaption>
+                <h3>At the Sea</h3>
+                <p>This is where I used to take a good glimpse at the high seas ever since I was a little kid.</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh4.googleusercontent.com/-N8NGAgyAZ08/VAyRGqWBHSI/AAAAAAAABbI/_SnvVK0HGS8/w426-h283/Kauai%2BAug%2B2008%2B688.JPG" alt="">
+            <figcaption>
+                <h3>Clear for take off!</h3>
+                <p>I used to take a ride to the high skies in a helicopter ever since I was a little kid!</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh3.googleusercontent.com/-mQ9eGk40DvE/VAz7ApiYl8I/AAAAAAAABhQ/F9xcsBrc_1k/w1000-h665/DSC_0077.JPG" alt="">
+            <figcaption>
+                <h3>Me and the Boys</h3>
+                <p>This is me of today and by three brothers that are aside me.</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+    <figure>
+        <a href="#">
+            <img src="https://lh5.googleusercontent.com/-3RMsBqsxRMA/VAzfhOAEjBI/AAAAAAAABgQ/180XERDKqmk/w426-h585/IMG_4883.jpg" alt="">
+            <figcaption>
+                <h3>Dexter, Dexter</h3>
+                <p>This is me in a parody picture of my mom's favorite TV show, Dexter while in Vegas!</p>
+            </figcaption>
+        </a>
+    </figure>
+    
+</section>
+
+<footer>
+    <p>Created by Parker Zink</p>
+</footer>?
+
+<script>// Purely experimental at this stage. Degrades terribly, not sure about usability and having problems with the use of positioning when hovering.?//@ sourceURL=pen.js
+</script>
+<script src="http://codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+</body></html>
